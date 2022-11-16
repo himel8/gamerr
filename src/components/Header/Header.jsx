@@ -9,7 +9,9 @@ const Header = () => {
           gamerr.gg
         </h2>
 
-        <Button Style={"customBg text-primary"}>Reserve your Spot</Button>
+        <Button Style={"customBg text-primary text-center"}>
+          Reserve your Spot
+        </Button>
       </div>
     </header>
   );

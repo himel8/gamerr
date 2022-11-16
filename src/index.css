@@ -40,3 +40,12 @@ code {
   content: "|";
   top: 0;
 }
+
+@media screen and (max-width: 400px) {
+  .customFooterFlex {
+    flex-direction: column;
+  }
+  .footerLinkBar::after {
+    display: none;
+  }
+}

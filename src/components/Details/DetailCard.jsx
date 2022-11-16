@@ -26,10 +26,10 @@ const DetailCard = ({ data }) => {
             id % 2 === 1 ? "-mr-1 " : " md:pl-[56px] -ml-1"
           }`}
         >
-          <h5 className="font-primary font-normal text-2xl sm:text-[27px] text-[#F06626] mb-2">
+          <h5 className="font-primary font-normal text-2xl sm:text-[27px] text-[#F06626] mb-3">
             {title}
           </h5>
-          <p className="font-primary font-normal text-base sm:text-[20px] text-white tracking-tighter">
+          <p className="font-primary font-normal text-base sm:text-[20px] sm:leading-[30px] text-white tracking-tighter">
             {desc}
           </p>
         </div>

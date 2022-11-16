@@ -1,6 +1,6 @@
 import React from "react";
 import BannerImg from "../assets/banner.png";
-import Form from "./Common/Form";
+import UpperForm from "./Common/UpperForm";
 
 export const Banner = () => {
   return (
@@ -13,7 +13,7 @@ export const Banner = () => {
         <p className="font-primary font-normal text-xl sm:text-2xl tracking-tight mb-8 text-white">
           Create a free Gamerr profile to earn from your skills
         </p>
-        <Form />
+        <UpperForm />
       </div>
       <div className="w-full lg:w-[40%] relative">
         <img src={BannerImg} alt="banner-img" className="z-10" />

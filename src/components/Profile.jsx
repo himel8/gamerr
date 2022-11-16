@@ -14,7 +14,7 @@ const Profile = () => {
         identity
       </SubTitle>
 
-      <div className="flex justify-center items-center w-[80%] sm:w-[60%] mx-auto py-10">
+      <div className="flex justify-center items-center w-full sm:w-[80%] mx-auto py-10">
         <img src={profileImg} alt="profile-img" className="w-full" />
       </div>
 

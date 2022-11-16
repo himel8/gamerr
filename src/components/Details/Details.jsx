@@ -20,24 +20,24 @@ const detailsData = [
     id: 2,
     img: Img2,
     boxImg: boxImg2,
-    title: "Connect your Accounts",
-    desc: "Sync over 10000+ game titles, social accounts and gaming IDs to your gamerr profile to flaunt your stats, achievements, and expertise to the world.",
+    title: "List your Services",
+    desc: "Choose from hundreds of suggested services, list your own custom service or discover tasks created by brands that fit your expertise.",
   },
   {
     id: 3,
     img: Img3,
     boxImg: boxImg2,
-    title: "Connect your Accounts",
-    desc: "Sync over 10000+ game titles, social accounts and gaming IDs to your gamerr profile to flaunt your stats, achievements, and expertise to the world.",
+    title: "Get paid to be a Gamerr",
+    desc: "Receive 20% payment upfront and the remaining on completing the service. You can also choose to get paid in points that can be redeemed in the gamerr shop.",
   },
 ];
 
 const Details = () => {
   return (
-    <section className="flex flex-col justify-center items-center py-20 mx-4">
+    <section className="flex flex-col justify-center items-center pb-20 pt-20 md:pt-10 mx-4">
       <Title>One Profile to Rule them All</Title>
 
-      <p className="font-primary font-medium text-lg sm:text-[23px]  text-white text-center pt-2 tracking-wider mb-8">
+      <p className="font-primary font-medium text-lg sm:text-[23px]  text-white text-center pt-2 tracking-wider mb-8 md:mb-0">
         Customize your very own gamerr profile in every way possible
       </p>
 

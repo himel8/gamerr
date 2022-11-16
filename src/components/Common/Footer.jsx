@@ -34,11 +34,11 @@ const Footer = () => {
 
       <div className="footerLine w-[95%] h-[3px] mx-auto"></div>
 
-      <div className="w-[95%] mx-auto flex justify-center md:justify-between items-center md:flex-nowrap flex-wrap md:gap-0 gap-4">
+      <div className="w-[95%] mx-auto flex justify-center md:justify-between items-center md:flex-nowrap flex-wrap md:gap-0 gap-4 customFooterFlex">
         <p className="font-text text-sm text-white">
           All Rights Reserved @gamer.gg
         </p>
-        <div className="flex justify-center items-center gap-[18px]">
+        <div className="flex justify-center items-center gap-[18px] customFooterFlex">
           {secondlinks.map((data, index) => (
             <a
               key={index}

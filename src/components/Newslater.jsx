@@ -1,6 +1,6 @@
 import React from "react";
 import Img from "../assets/news.png";
-import Form from "./Common/Form";
+import LowerForm from "./Common/LowerForm";
 import SubTitle from "./Common/SubTitle";
 import Title from "./Common/Title";
 
@@ -18,7 +18,7 @@ const Newslater = () => {
           Reserve your spot today to claim the username of your dreams. We’re
           also giving away freebies, games & points to early-joiners!
         </SubTitle>
-        <Form />
+        <LowerForm />
       </div>
     </section>
   );
