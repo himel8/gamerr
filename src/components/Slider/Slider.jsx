@@ -37,11 +37,7 @@ const Slider = () => {
           className="h-screen flex justify-center items-start rounded-xl overflow-hidden"
           key={index}
         >
-          <img
-            src={data}
-            alt=""
-            className="w-full object-cover rounded-xl h-full"
-          />
+          <img src={data} alt="" className="w-full object-cover rounded-xl" />
         </SwiperSlide>
       ))}
     </Swiper>
