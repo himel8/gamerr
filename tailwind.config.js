@@ -19,6 +19,7 @@ module.exports = {
         gamerBg: "url('assets/gamersbg.png')",
         detailBox: "url('assets/textBg.png')",
         mainBg: "url('assets/mainBg.png')",
+        iconBg: "url('assets/profile.png')",
       },
       backgroundSize: {
         full: "100% 100%",

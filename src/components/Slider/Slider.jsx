@@ -12,10 +12,10 @@ const sliderDate = [slide1, slide2, slide3, slide4];
 const Slider = () => {
   return (
     <Swiper
-      spaceBetween={30}
+      spaceBetween={10}
       loop={true}
       autoplay={{
-        delay: 1500,
+        delay: 1000,
         disableOnInteraction: false,
       }}
       modules={[Autoplay]}
@@ -24,13 +24,13 @@ const Slider = () => {
           slidesPerView: 1,
         },
         620: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         1200: {
-          slidesPerView: 3,
+          slidesPerView: 1,
         },
       }}
-      className="h-[122vh] mx-4"
+      className="h-[90vh] sm:h-[120vh] md:h-[160vh] mx-4"
     >
       {sliderDate.map((data, index) => (
         <SwiperSlide

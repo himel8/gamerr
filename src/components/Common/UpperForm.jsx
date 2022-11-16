@@ -9,59 +9,55 @@ const UpperForm = () => {
   const signature =
     "3aa5b3d47814f06563169237c3a9a5fb1d428cdbb8cee13dac755d2746453541";
 
+  const userName = `gamerr.gg/` + name;
+
   const handleName = (e) => {
     setName(e.target.value);
   };
 
   const handleInput = (e) => {
-    e.preventDefault();
-    if (name.includes("gamerr.gg/")) {
-      window.prefinery(
-        "addUser",
-        {
-          email: email,
-          first_name: name,
-        },
-        function (user) {
-          console.log(user);
-          if (user.id) {
-            toast.success("user added sucessfully", {
-              position: "top-right",
-              autoClose: 5000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-              theme: "light",
-            });
-
-            window.prefinery("embedReferralPage", {
-              email: email,
-              signature: signature,
-              dom_id: "embed-here",
-            });
-          } else {
-            toast.error("got an error", {
-              position: "top-right",
-              autoClose: 5000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-              theme: "light",
-            });
-          }
-        }
-      );
-    } else {
-      alert('please add "gamerr.gg/" this first of your username');
-      window.location.reload();
-    }
-
     setName("");
     setEmail("");
+    e.preventDefault();
+
+    window.prefinery(
+      "addUser",
+      {
+        email: email,
+        first_name: userName,
+      },
+      function (user) {
+        if (user.id) {
+          toast.success("user added sucessfully", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+
+          window.prefinery("embedReferralPage", {
+            email: email,
+            signature: signature,
+            dom_id: "embed-here",
+          });
+        } else {
+          toast.error("got an error", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        }
+      }
+    );
   };
 
   return (
@@ -91,15 +87,18 @@ const UpperForm = () => {
               placeholder="Your email"
             />
           </div>
-          <div className="w-full lg:w-[33%] px-2 xl:px-3 mb-6 lg:mb-0">
+          <div className="w-full lg:w-[33%] px-2 xl:px-3 mb-6 lg:mb-0 relative">
             <input
-              className="appearance-none block w-full font-primary font-normal text-[16px] leading-[24px] text-[#fff] rounded-sm py-6 px-5 bg-[#4a4a4a] outline-primary"
+              className="pl-[114px] appearance-none block w-full font-primary font-normal text-[16px] leading-[24px] text-[#fff] rounded-sm py-6 px-5 bg-[#4a4a4a] outline-primary"
               id="grid-first-text"
               onChange={handleName}
               type="text"
-              defaultValue="gamerr.gg/yourname"
-              placeholder="gamerr.gg/yourname"
+              defaultValue="yourname"
+              placeholder="yourname"
             />
+            <p className="absolute translate-x-[-50%] translate-y-[-50%] top-1/2 left-[79px] font-primary font-normal text-[16px] leading-[24px] text-[#fff] opacity-70">
+              gamerr.gg/
+            </p>
           </div>
           <div className="w-full lg:w-[33%]  px-2 xl:px-3">
             <input
@@ -111,7 +110,7 @@ const UpperForm = () => {
         </div>
       </form>
 
-      <div id="embed-here"></div>
+      <div id="embed-here" className="text-white"></div>
     </div>
   );
 };
