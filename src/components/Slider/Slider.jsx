@@ -30,14 +30,18 @@ const Slider = () => {
           slidesPerView: 3,
         },
       }}
-      className="h-[130vh] mx-4"
+      className="h-[125vh] mx-4"
     >
       {sliderDate.map((data, index) => (
         <SwiperSlide
           className="h-screen flex justify-center items-start rounded-xl overflow-hidden"
           key={index}
         >
-          <img src={data} alt="" className="w-full object-cover rounded-xl" />
+          <img
+            src={data}
+            alt=""
+            className="w-full object-cover rounded-xl h-full"
+          />
         </SwiperSlide>
       ))}
     </Swiper>
