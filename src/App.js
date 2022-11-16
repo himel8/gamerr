@@ -7,6 +7,7 @@ import Gamers from "./components/Gamers";
 import Header from "./components/Header/Header";
 import Newslater from "./components/Newslater";
 import Profile from "./components/Profile";
+import Slider from "./components/Slider/Slider";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Header />
         <Banner />
         <Profile />
+        <Slider />
         <Advantage />
         <Details />
         <Gamers />
