@@ -30,7 +30,7 @@ const Slider = () => {
           slidesPerView: 1,
         },
       }}
-      className="h-[90vh] sm:h-[120vh] md:h-[160vh] mx-4"
+      className="h-[90vh] sm:h-[120vh] md:h-[140vh] mx-4"
     >
       {sliderDate.map((data, index) => (
         <SwiperSlide

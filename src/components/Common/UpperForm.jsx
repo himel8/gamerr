@@ -89,7 +89,7 @@ const UpperForm = () => {
           </div>
           <div className="w-full lg:w-[33%] px-2 xl:px-3 mb-6 lg:mb-0 relative">
             <input
-              className="pl-[114px] appearance-none block w-full font-primary font-normal text-[16px] leading-[24px] text-[#fff] rounded-sm py-6 px-5 bg-[#4a4a4a] outline-primary"
+              className="pl-[115px] appearance-none block w-full font-primary font-normal text-[16px] leading-[24px] text-[#fff] rounded-sm py-6 px-5 bg-[#4a4a4a] outline-primary"
               id="grid-first-text"
               onChange={handleName}
               type="text"
