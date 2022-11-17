@@ -42,7 +42,7 @@ code {
 }
 
 .custom-style-slider {
-  height: 140vh;
+  height: 110vh;
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {

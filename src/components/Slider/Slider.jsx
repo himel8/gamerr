@@ -11,14 +11,14 @@ const sliderDate = [slide1, slide2, slide3, slide4];
 
 const Slider = () => {
   return (
-    <div className="bg-iconBg bg-no-repeat bg-full md:w-[110%] sm:w-[140%] w-[180%] my-6 ">
+    <div className="bg-iconBg bg-no-repeat bg-full lg:w-[90%] md:w-[120%] sm:w-[140%] w-[180%] my-6 ">
       {/* // <div className="flex justify-center items-center w-[44%] sm:w-[43%] mx-auto py-10 "> */}
-      <div className="w-[50%] md:w-[60%] lg:w-[43%] mx-auto py-10">
+      <div className="w-[50%] md:w-[50%] lg:w-[40%] mx-auto py-10">
         <Swiper
           spaceBetween={20}
           loop={true}
           autoplay={{
-            delay: 1000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
