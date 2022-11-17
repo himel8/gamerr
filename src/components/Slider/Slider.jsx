@@ -11,45 +11,45 @@ const sliderDate = [slide1, slide2, slide3, slide4];
 
 const Slider = () => {
   return (
-    <div className="bg-iconBg bg-no-repeat bg-full md:w-[110%] sm:w-[140%] w-[180%] my-6 ">
-      <div className="flex justify-center items-center w-[44%] sm:w-[43%] mx-auto py-10 ">
-        <Swiper
-          spaceBetween={20}
-          loop={true}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay]}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-            },
-            620: {
-              slidesPerView: 1,
-            },
-            1200: {
-              slidesPerView: 1,
-            },
-          }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-          className="custom-style-slider"
-        >
-          {sliderDate.map((data, index) => (
-            <SwiperSlide
-              className="flex justify-center items-start rounded-xl"
-              key={index}
-            >
-              <img
-                src={data}
-                alt=""
-                className="w-full object-cover rounded-xl "
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+    // <div className="bg-iconBg bg-no-repeat bg-full md:w-[110%] sm:w-[140%] w-[180%] my-6 ">
+    // <div className="flex justify-center items-center w-[44%] sm:w-[43%] mx-auto py-10 ">
+    <div className="w-[80%] md:w-[60%] lg:w-[50%] mx-auto py-10">
+      <Swiper
+        spaceBetween={20}
+        loop={true}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          620: {
+            slidesPerView: 1,
+          },
+          1200: {
+            slidesPerView: 1,
+          },
+        }}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+        className="custom-style-slider rounded-xl"
+      >
+        {sliderDate.map((data, index) => (
+          <SwiperSlide
+            className="flex justify-center items-start rounded-xl"
+            key={index}
+          >
+            <img
+              src={data}
+              alt=""
+              className="w-full object-cover rounded-xl "
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };
