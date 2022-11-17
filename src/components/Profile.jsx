@@ -14,11 +14,7 @@ const Profile = () => {
         identity
       </SubTitle>
 
-      <div className="bg-iconBg bg-no-repeat bg-full md:w-[110%] sm:w-[140%] w-[180%] my-6 ">
-        <div className="flex justify-center items-center w-[44%] sm:w-[43%] mx-auto py-10 ">
-          <Slider />
-        </div>
-      </div>
+      <Slider />
 
       <p className="font-primary font-medium text-lg sm:text-[23px]  text-white text-center pt-2 tracking-wider mb-8">
         Start earning from your gaming skills{" "}
