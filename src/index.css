@@ -41,6 +41,21 @@ code {
   top: 0;
 }
 
+.custom-style-slider {
+  height: 140vh;
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .custom-style-slider {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 639px) {
+  .custom-style-slider {
+    height: 90vh;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .customFooterFlex {
     flex-direction: column;

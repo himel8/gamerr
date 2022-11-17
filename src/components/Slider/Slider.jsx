@@ -12,7 +12,7 @@ const sliderDate = [slide1, slide2, slide3, slide4];
 const Slider = () => {
   return (
     <Swiper
-      spaceBetween={10}
+      spaceBetween={20}
       loop={true}
       autoplay={{
         delay: 1000,
@@ -30,14 +30,16 @@ const Slider = () => {
           slidesPerView: 1,
         },
       }}
-      className="h-[90vh] sm:h-[120vh] md:h-[140vh] mx-4"
+      onSlideChange={() => console.log("slide change")}
+      onSwiper={(swiper) => console.log(swiper)}
+      className="custom-style-slider"
     >
       {sliderDate.map((data, index) => (
         <SwiperSlide
-          className="h-screen flex justify-center items-start rounded-xl overflow-hidden"
+          className="flex justify-center items-start rounded-xl overflow-hidden"
           key={index}
         >
-          <img src={data} alt="" className="w-full object-cover rounded-xl" />
+          <img src={data} alt="" className="w-full object-cover rounded-xl " />
         </SwiperSlide>
       ))}
     </Swiper>

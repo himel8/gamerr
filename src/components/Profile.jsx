@@ -14,7 +14,7 @@ const Profile = () => {
         identity
       </SubTitle>
 
-      <div className="bg-iconBg bg-no-repeat bg-full sm:w-[110%] w-[180%] my-6 ">
+      <div className="bg-iconBg bg-no-repeat bg-full md:w-[110%] sm:w-[140%] w-[180%] my-6 ">
         <div className="flex justify-center items-center w-[44%] sm:w-[43%] mx-auto py-10 ">
           <Slider />
         </div>
