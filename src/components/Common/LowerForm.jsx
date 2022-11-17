@@ -92,8 +92,8 @@ const LowerForm = () => {
               id="grid-first-text"
               onChange={handleName}
               type="text"
-              defaultValue="yourname"
-              placeholder="yourname"
+              defaultValue="username"
+              placeholder="username"
             />
             <p className="absolute translate-x-[-50%] translate-y-[-50%] top-1/2 left-[79px] font-primary font-normal text-[16px] leading-[24px] text-[#fff] opacity-70">
               gamerr.gg/
