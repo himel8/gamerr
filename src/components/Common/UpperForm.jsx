@@ -1,13 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const UpperForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-
-  const signature =
-    "3aa5b3d47814f06563169237c3a9a5fb1d428cdbb8cee13dac755d2746453541";
+  const navigate = useNavigate();
 
   const userName = `gamerr.gg/` + name;
 
@@ -39,11 +38,7 @@ const UpperForm = () => {
             theme: "light",
           });
 
-          window.prefinery("embedReferralPage", {
-            email: email,
-            signature: signature,
-            dom_id: "embed-here",
-          });
+          navigate(`/referral/${email}`);
         } else {
           toast.error("got an error", {
             position: "top-right",
@@ -108,8 +103,6 @@ const UpperForm = () => {
           </div>
         </div>
       </form>
-
-      <div id="embed-here" className="text-white"></div>
     </div>
   );
 };
