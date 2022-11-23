@@ -16,9 +16,14 @@ const AdvantageCard = ({ data }) => {
           {subTitle}
         </h6>
 
-        <p className="font-primary font-medium text-base sm:text-[18px] tracking-[-4%] text-[#DAD7D7] pb-2">
-          {desc}
-        </p>
+        {desc.map((data, index) => (
+          <p
+            key={index}
+            className="font-primary text-left font-medium text-base sm:text-[18px] tracking-[-4%] text-[#DAD7D7] ml-4 pl-4 mb-1 relative before:absolute before:content-['•'] before:left-0"
+          >
+            {data}
+          </p>
+        ))}
       </div>
     </div>
   );

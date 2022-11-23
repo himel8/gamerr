@@ -12,7 +12,7 @@ const Newslater = () => {
       </div>
       <div className="flex flex-col gap-1 justify-start w-full md:w-[65%]">
         <Title Style="text-center md:text-left" LineStyle={"w-[99%] h-[3px]"}>
-          Become a Gamerr today!
+          Start Earning as a Gamerr today!
         </Title>
         <SubTitle Style="text-center md:text-left pb-10">
           Reserve your spot today to claim the username of your dreams. We’re

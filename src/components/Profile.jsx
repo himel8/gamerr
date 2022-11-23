@@ -17,7 +17,7 @@ const Profile = () => {
       <Slider />
 
       <p className="font-primary font-medium text-lg sm:text-[23px]  text-white text-center pt-2 tracking-wider mb-8">
-        Start earning from your gaming skills{" "}
+        Find paid gigs for your gaming skills{" "}
       </p>
 
       <Button Style={"bg-primary text-white"}>Reserve your Spot</Button>

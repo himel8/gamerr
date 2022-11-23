@@ -14,31 +14,61 @@ const UpperForm = () => {
     setName(e.target.value);
   };
 
-  const handleInput = (e) => {
+  const handleInput = async (e) => {
     setName("");
     setEmail("");
     e.preventDefault();
 
-    window.prefinery(
-      "addUser",
+    await fetch(
+      "http://ec2-65-2-128-237.ap-south-1.compute.amazonaws.com:8080/api/v1/gamer/registration",
       {
-        email: email,
-        first_name: userName,
-      },
-      function (user) {
-        if (user.id) {
-          toast.success("user added sucessfully", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-          });
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({
+          username: userName,
+          email: email,
+        }),
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.isSuccess) {
+          window.prefinery(
+            "addUser",
+            {
+              email: email,
+              first_name: userName,
+            },
+            function (user) {
+              if (user.id) {
+                toast.success("user added sucessfully", {
+                  position: "top-right",
+                  autoClose: 5000,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  theme: "light",
+                });
 
-          navigate(`/referral/${email}`);
+                navigate(`/referral/${email}`);
+              } else {
+                toast.error("got an error", {
+                  position: "top-right",
+                  autoClose: 5000,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  theme: "light",
+                });
+              }
+            }
+          );
         } else {
           toast.error("got an error", {
             position: "top-right",
@@ -51,8 +81,7 @@ const UpperForm = () => {
             theme: "light",
           });
         }
-      }
-    );
+      });
   };
 
   return (

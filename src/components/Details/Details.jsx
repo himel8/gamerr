@@ -14,21 +14,21 @@ const detailsData = [
     img: Img1,
     boxImg: boxImg1,
     title: "Connect your Accounts",
-    desc: "Sync over 10000+ game titles, social accounts and gaming IDs to your gamerr profile to flaunt your stats, achievements, and expertise to the world.",
+    desc: "Sync over 10,000+ game titles, social accounts and gaming IDs to your gamerr profile to showcase your stats, achievements and expertise.",
   },
   {
     id: 2,
     img: Img2,
     boxImg: boxImg2,
-    title: "List your Services",
-    desc: "Choose from hundreds of suggested services, list your own custom service or discover tasks created by brands that fit your expertise.",
+    title: "Monetize your Skills",
+    desc: "Choose from hundreds of suggested products or services, list your custom service or discover paid gigs and jobs by brands that fit your expertise.",
   },
   {
     id: 3,
     img: Img3,
     boxImg: boxImg2,
-    title: "Get paid to be a Gamerr",
-    desc: "Receive 20% payment upfront and the remaining on completing the service. You can also choose to get paid in points that can be redeemed in the gamerr shop.",
+    title: "Get Paid for being a Gamerr",
+    desc: "Receive 20% payment upfront and the remaining on completing the service. You can also choose to get paid 100% upfront in points that can be redeemed in the gamerr shop.",
   },
 ];
 
@@ -48,7 +48,7 @@ const Details = () => {
       </div>
 
       <p className="font-primary font-medium text-[23px]  text-white text-center pt-2 tracking-wider mb-8">
-        Start earning from your gaming skills
+        Find paid gigs for your gaming skills
       </p>
 
       <Button Style={"bg-primary text-white"}>Reserve your Spot</Button>

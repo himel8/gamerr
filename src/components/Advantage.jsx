@@ -13,23 +13,34 @@ const data = [
     img: Img1,
     title: "Ordinary Gamers",
     subTitle: "Harassment is a problem",
-    desc: "No proper place to connect with teams and brandsNo good fair financial platform for your stuffToxic teammates ruin your gameFailing to improve your skills It’s hard to find a partner that matches youIt’s impossible to reach pro gamers",
+    desc: [
+      "Several, disjointed gamer identities.",
+      "No way to showcase gaming skills.",
+      "Can’t monetize gaming expertise.",
+      "Tough to connect with clients or employers who need gaming skills",
+    ],
   },
   {
     img: Img2,
     title: "Gamerr.gg",
     subTitle: "Connect directly with pro gamers & teams",
-    desc: "All in oneYour unified gamer profileRecord & share wins and fails momentsEarn by being active - and get your cut of ads revenueThe social network just for gamersLearn from pros",
+    desc: [
+      "Unified gamerr profile.",
+      "Verified skills showcase.",
+      "Multiple monetization methods.",
+      "Easily sell products or services & be discovered by potential employers.",
+    ],
   },
 ];
 
 const Advantage = () => {
   return (
     <section className="flex justify-center flex-col items-center py-8 mx-4 relative">
-      <Title>Unlock the Gamerr Advantage</Title>
+      <Title>Unlock Your Gamerr Advantage</Title>
 
       <SubTitle>
-        By selling products and services to brands, advertisers and other gamers
+        By listing your skills, services and products for brands, advertisers
+        and other gamers to discover
       </SubTitle>
 
       <div className="flex justify-center items-center gap-6 flex-wrap md:flex-nowrap w-full lg:w-[70%] mx-auto mt-8">
@@ -39,7 +50,7 @@ const Advantage = () => {
       </div>
 
       <p className="font-primary font-medium text-[23px]  text-white text-center tracking-wider py-8">
-        Start earning from your gaming skills{" "}
+        Find paid gigs for your gaming skills{" "}
       </p>
 
       <Button Style={"bg-primary text-white"}>Reserve your Spot</Button>

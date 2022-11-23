@@ -7,21 +7,21 @@ import GamerCard from "./GamerCard";
 const gamerdata = [
   {
     img: Img,
-    desc: "Gamer.gg is actually a place for us to earn, gather, promote and create. like a social home base. Thanks for opening up and thanks for that “Gamers Respect Gamer” IP protection shield!",
-    name: "DOUBLE_O_SEVEN",
-    title: "PUBG L500",
+    desc: "“I didn’t even know my gaming skills were something brands would pay for until I made my gamerr profile!”",
+    name: "Jai Patil (Fortnite)",
+    title: "Freelance Community Manager",
   },
   {
     img: Img,
-    desc: "Gamer.gg is actually a place for us to earn, gather, promote and create. like a social home base. Thanks for opening up and thanks for that “Gamers Respect Gamer” IP protection shield!",
-    name: "DOUBLE_O_SEVEN",
-    title: "PUBG L500",
+    desc: "“The gaming internships I found through my Gamerr profile were 100x better than the usual ones I found through LinkedIn!”",
+    name: "Saloni Pawar (Valorant)",
+    title: "Communications Intern at a AAA Game Developer",
   },
   {
     img: Img,
-    desc: "Gamer.gg is actually a place for us to earn, gather, promote and create. like a social home base. Thanks for opening up and thanks for that “Gamers Respect Gamer” IP protection shield!",
-    name: "DOUBLE_O_SEVEN",
-    title: "PUBG L500",
+    desc: "“I get paid to test out new games every month and to recommend them to my friends once they launch. It’s good money for something I would have done for free!”",
+    name: "Ishan Kanungo (Freefire)",
+    title: "Early Game Tester & Advocate",
   },
 ];
 
@@ -29,7 +29,7 @@ const Gamers = () => {
   return (
     <section className="mx-4">
       <Title>100,000+ Gamerr Profiles</Title>
-      <SubTitle>Selling services to 100+ brands and advertisers</SubTitle>
+      <SubTitle>50,000+ gigs, jobs and paid opportunities</SubTitle>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
         {gamerdata.map((data, index) => (
           <GamerCard key={index} data={data} />

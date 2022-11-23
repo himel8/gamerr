@@ -3,10 +3,10 @@ import React from "react";
 const GamerCard = ({ data }) => {
   const { img, desc, name, title } = data;
   return (
-    <div className="bg-gamerBg bg-full bg-no-repeat flex flex-col justify-center items-center gap-6 py-4 px-1">
-      <div>
+    <div className="bg-gamerBg bg-full bg-no-repeat flex flex-col justify-center items-center gap-6 py-4 px-2">
+      {/* <div>
         <img src={img} alt={name} />
-      </div>
+      </div> */}
       <p className="font-primary font-normal text-[16px] text-white text-center tracking-[-4%]">
         {desc}
       </p>
