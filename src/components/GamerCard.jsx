@@ -1,7 +1,7 @@
 import React from "react";
 
 const GamerCard = ({ data }) => {
-  const { img, desc, name, title } = data;
+  const { desc, name, title } = data;
   return (
     <div className="bg-gamerBg bg-full bg-no-repeat flex flex-col justify-center items-center gap-6 py-4 px-2">
       {/* <div>
