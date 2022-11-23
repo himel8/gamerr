@@ -4,7 +4,7 @@ const AdvantageCard = ({ data }) => {
   const { img, title, subTitle, desc } = data;
   return (
     <div className="flex flex-col justify-center items-center gap-2 w-full sm:w-[75%] md:w-[50%]">
-      <div className="w-[134px] h-[134px] flex items-center">
+      <div className={` w-[134px] h-[134px] flex items-center`}>
         <img src={img} alt={title} className="w-full" />
       </div>
       <div className="text-center space-y-2 bg-borderBg bg-full bg-no-repeat rounded-[34px] min-h-[16.5rem] sm:min-h-[19.5rem] p-4">

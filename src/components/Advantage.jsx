@@ -10,6 +10,7 @@ import Title from "./Common/Title";
 
 const data = [
   {
+    id: 1,
     img: Img1,
     title: "Ordinary Gamers",
     subTitle: "Harassment is a problem",
@@ -21,6 +22,7 @@ const data = [
     ],
   },
   {
+    id: 2,
     img: Img2,
     title: "Gamerr.gg",
     subTitle: "Connect directly with pro gamers & teams",
@@ -53,7 +55,9 @@ const Advantage = () => {
         Find paid gigs for your gaming skills{" "}
       </p>
 
-      <Button Style={"bg-primary text-white"}>Reserve your Spot</Button>
+      <Button Style={"bg-primary text-white"} link={"#grid-first-email"}>
+        Reserve your Spot
+      </Button>
 
       {/* absolute images */}
 

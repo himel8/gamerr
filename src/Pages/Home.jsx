@@ -14,8 +14,8 @@ const Home = () => {
       <div className="App w-full sm:w-[95%] md:w-[90%] lg:w-[85%] mx-auto py-4 md:py-10">
         <Header />
         <Banner />
-        <Profile />
         <Advantage />
+        <Profile />
         <Details />
         <Gamers />
         <Newslater />

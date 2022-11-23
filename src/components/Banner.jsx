@@ -6,7 +6,7 @@ export const Banner = () => {
   return (
     <section className="flex justify-center items-center gap-8 mx-4 lg:flex-nowrap flex-wrap-reverse py-10">
       <div className="w-full lg:w-[60%] flex flex-col gap-6 text-center lg:text-left">
-        <h2 className="font-primary font-semibold text-4xl sm:text-5xl sm:leading-[60px] text-primary capitalize">
+        <h2 className="font-primary font-semibold text-4xl sm:text-5xl sm:leading-[60px] text-primary capitalize text-center">
           Don’t Just Play Games
           <br />
           Make Money for Being a Gamerr

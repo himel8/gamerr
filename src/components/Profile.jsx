@@ -20,7 +20,9 @@ const Profile = () => {
         Find paid gigs for your gaming skills{" "}
       </p>
 
-      <Button Style={"bg-primary text-white"}>Reserve your Spot</Button>
+      <Button Style={"bg-primary text-white"} link={"#grid-first-email"}>
+        Reserve your Spot
+      </Button>
     </section>
   );
 };

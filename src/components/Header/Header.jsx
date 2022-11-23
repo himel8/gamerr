@@ -10,7 +10,10 @@ const Header = () => {
           <img src={logo} alt="logo" className="w-full" />
         </div>
 
-        <Button Style={"customBg text-primary text-center"}>
+        <Button
+          Style={"customBg text-center text-white"}
+          link={"#grid-first-email"}
+        >
           Reserve your Spot
         </Button>
       </div>
