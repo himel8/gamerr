@@ -11,7 +11,7 @@ const Header = () => {
         </div>
 
         <Button
-          Style={"customBg text-center text-white"}
+          Style={"bg-white text-center text-primary"}
           link={"#grid-first-email"}
         >
           Reserve your Spot

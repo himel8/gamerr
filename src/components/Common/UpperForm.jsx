@@ -54,7 +54,8 @@ const UpperForm = () => {
                   theme: "light",
                 });
 
-                navigate(`/referral/${email}`);
+                // navigate(`/referral/${email}`, "_blank");
+                window.open(`/referral/${email}`, "_blank");
               } else {
                 toast.error("got an error", {
                   position: "top-right",
