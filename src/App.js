@@ -8,11 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route
-          path={`/referral/:userId`}
-          target="_blank"
-          element={<MyReferral />}
-        />
+        <Route path={`/referral/:userId`} element={<MyReferral />} />
       </Routes>
     </BrowserRouter>
   );

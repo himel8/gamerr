@@ -4,6 +4,7 @@ import Button from "../components/Common/Button";
 
 const MyReferral = () => {
   const { userId } = useParams();
+  console.log(userId);
   const signature =
     "3aa5b3d47814f06563169237c3a9a5fb1d428cdbb8cee13dac755d2746453541";
 
