@@ -2,8 +2,9 @@ import React from "react";
 import Img2 from "../../assets/army.png";
 import Img3 from "../../assets/army2.png";
 import boxImg1 from "../../assets/detailsline.png";
-import boxImg2 from "../../assets/pubg1.png";
+import boxImg3 from "../../assets/pubg1.png";
 import Img1 from "../../assets/queen.png";
+import boxImg2 from "../../assets/service-1.png";
 import Button from "../Common/Button";
 import Title from "../Common/Title";
 import DetailCard from "./DetailCard";
@@ -26,7 +27,7 @@ const detailsData = [
   {
     id: 3,
     img: Img3,
-    boxImg: boxImg2,
+    boxImg: boxImg3,
     title: "Get Paid for being a Gamerr",
     desc: "Receive 20% payment upfront and the remaining on completing the service. You can also choose to get paid 100% upfront in points that can be redeemed in the gamerr shop.",
   },

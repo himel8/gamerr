@@ -19,19 +19,16 @@ const UpperForm = () => {
     setEmail("");
     e.preventDefault();
 
-    await fetch(
-      "http://ec2-65-2-128-237.ap-south-1.compute.amazonaws.com:8080/api/v1/gamer/registration",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          username: userName,
-          email: email,
-        }),
-      }
-    )
+    await fetch("http://api.gamerr.gg/api/v1/gamer/registration", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        username: userName,
+        email: email,
+      }),
+    })
       .then((res) => res.json())
       .then((data) => {
         if (data.isSuccess) {
