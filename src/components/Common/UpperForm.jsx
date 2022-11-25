@@ -52,7 +52,7 @@ const UpperForm = () => {
                 // navigate(`/referral/${email}`, "_blank");
                 window.open(`/referral/${email}`, "_blank");
               } else {
-                toast.error("got an error", {
+                toast.error("Enter a valid username and Email", {
                   position: "top-right",
                   autoClose: 5000,
                   hideProgressBar: false,
