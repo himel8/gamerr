@@ -19,7 +19,7 @@ const UpperForm = () => {
     setEmail("");
     e.preventDefault();
 
-    await fetch("http://api.gamerr.gg/api/v1/gamer/registration", {
+    await fetch("https://api.gamerr.gg/api/v1/gamer/registration", {
       method: "POST",
       headers: {
         "content-type": "application/json",
