@@ -40,7 +40,7 @@ const UpperForm = () => {
               if (user.id) {
                 toast.success("user added sucessfully", {
                   position: "top-right",
-                  autoClose: 5000,
+                  autoClose: 1000,
                   hideProgressBar: false,
                   closeOnClick: true,
                   pauseOnHover: true,
@@ -54,7 +54,7 @@ const UpperForm = () => {
               } else {
                 toast.error("Enter a valid username and Email", {
                   position: "top-right",
-                  autoClose: 5000,
+                  autoClose: 1000,
                   hideProgressBar: false,
                   closeOnClick: true,
                   pauseOnHover: true,
@@ -84,7 +84,7 @@ const UpperForm = () => {
     <div>
       <ToastContainer
         position="top-right"
-        autoClose={5000}
+        autoClose={1000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
