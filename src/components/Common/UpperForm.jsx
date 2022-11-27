@@ -50,7 +50,7 @@ const UpperForm = () => {
                 });
 
                 // navigate(`/referral/${email}`, "_blank");
-                window.open(`/referral/${email}`, "_blank");
+                window.open(`/thankyou/${email}`, "_blank");
               } else {
                 toast.error("Enter a valid username and Email", {
                   position: "top-right",
