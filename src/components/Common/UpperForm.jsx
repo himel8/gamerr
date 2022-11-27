@@ -52,7 +52,7 @@ const UpperForm = () => {
                 // navigate(`/referral/${email}`, "_blank");
                 window.open(`/thankyou/${email}`, "_blank");
               } else {
-                toast.error("Enter a valid username and Email", {
+                toast.error("this email already registered", {
                   position: "top-right",
                   autoClose: 1000,
                   hideProgressBar: false,
@@ -66,7 +66,7 @@ const UpperForm = () => {
             }
           );
         } else {
-          toast.error("got an error", {
+          toast.error("this email already registered", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,

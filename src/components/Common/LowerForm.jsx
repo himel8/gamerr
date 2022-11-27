@@ -5,8 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 const LowerForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const signature =
-    "3aa5b3d47814f06563169237c3a9a5fb1d428cdbb8cee13dac755d2746453541";
+
   const userName = `gamerr.gg/` + name;
   const handleName = async (e) => {
     setName(e.target.value);
@@ -55,7 +54,7 @@ const LowerForm = () => {
                 // navigate(`/referral/${email}`, "_blank");
                 window.open(`/thankyou/${email}`, "_blank");
               } else {
-                toast.error("got an error", {
+                toast.error("this email already registered", {
                   position: "top-right",
                   autoClose: 5000,
                   hideProgressBar: false,
@@ -69,7 +68,7 @@ const LowerForm = () => {
             }
           );
         } else {
-          toast.error("got an error", {
+          toast.error("this email already registered", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
