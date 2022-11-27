@@ -106,6 +106,7 @@ const LowerForm = () => {
               id="grid-second-email"
               onChange={(e) => setEmail(e.target.value)}
               type="email"
+              required
               placeholder="Your email"
             />
           </div>
@@ -113,6 +114,7 @@ const LowerForm = () => {
             <input
               className="pl-[115px] appearance-none block w-full font-primary font-normal text-[16px] leading-[24px] text-[#fff] rounded-sm py-6 px-5 bg-[#4a4a4a] outline-primary"
               id="grid-first-text"
+              required
               onChange={handleName}
               type="text"
               placeholder="username"

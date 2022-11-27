@@ -105,6 +105,7 @@ const UpperForm = () => {
               onChange={(e) => setEmail(e.target.value)}
               type="email"
               placeholder="Your email"
+              required
             />
           </div>
           <div className="w-full lg:w-[33%] px-2 xl:px-3 mb-6 lg:mb-0 relative">
@@ -114,6 +115,7 @@ const UpperForm = () => {
               onChange={handleName}
               type="text"
               placeholder="username"
+              required
             />
             <p className="absolute translate-x-[-50%] translate-y-[-50%] top-1/2 left-[79px] font-primary font-normal text-[16px] leading-[24px] text-[#fff] opacity-70">
               gamerr.gg/
