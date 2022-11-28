@@ -8,13 +8,13 @@ const AdvantageCard = ({ data }) => {
         <img src={img} alt={title} className="w-full" />
       </div>
       <div className="text-center space-y-2 bg-borderBg bg-full bg-no-repeat rounded-[34px] min-h-[16.5rem] sm:min-h-[19.5rem] p-4">
-        <h4 className="text-[#F06626] font-primary font-medium text-2xl sm:text-[27px] ">
+        <h4 className="text-[#F06626] font-primary font-medium text-2xl sm:text-[27px] pb-3">
           {title}
         </h4>
 
-        <h6 className="font-primary font-medium text-sm sm:text-[16px] tracking-[-4%] text-[#DAD7D7] pb-2">
+        {/* <h6 className="font-primary font-medium text-sm sm:text-[16px] tracking-[-4%] text-[#DAD7D7] pb-2">
           {subTitle}
-        </h6>
+        </h6> */}
 
         {desc.map((data, index) => (
           <p
